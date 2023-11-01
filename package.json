@@ -1,0 +1,22 @@
+{
+  "name": "desafio-hamburgueria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "node index.js",
+    "test": "echo\"Erro: no test specified\" && exit 1",
+    "server": "node --watch --no-warnings index.js"
+  },
+  "keywords": [],
+  "author": "Ruth_Diniz",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  }
+}
