@@ -11,7 +11,7 @@ O ID é gerado utilizando UUID V4 assim que o pedido é criado.
 
 <h4>GET /orders:</h4> Rota lista todos os pedidos já feitos.
 
-<h4>PUT /orders/:id:</h4> Essa rota altera um pedido já feito. Pode alterar,um ou todos os dados do pedido.O id do pedido é enviado nos parâmetros da rota.
+<h4>PUT /orders/:id:</h4> Essa rota altera um pedido já feito. Pode alterar,um ou todos os dados do pedido. O id do pedido é enviado nos parâmetros da rota.
 
 <h4>DELETE /orders/:id:</h4> Deleta um pedido já feito com o id enviado nos parâmetros da rota.
 
