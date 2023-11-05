@@ -5,7 +5,7 @@ app.use(express.json())
 
 const orders = []
 
-const checkOrderId = (request, reponse, next)=> {
+const checkOrderId = (request, response, next)=> {
     const { id } = request.params
 
     const index = orders.findIndex(order =>order.id === id)//interar user /user e verificar se id existe
@@ -18,6 +18,15 @@ const checkOrderId = (request, reponse, next)=> {
     request.orderId = id
     next()
 }
+
+const showMetod = (request, response, next) => {
+  console.log(`[${request.method}] - ${request.originalUrl}`);
+  
+    next();
+};
+
+// Aplica o middleware para todas as requisições
+app.use(showMetod);
 
 //rota para listar todos os projetos incluidos
 app.get('/orders', (request, response) => {
