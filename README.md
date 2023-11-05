@@ -1,11 +1,12 @@
-<h2 align="center">Aplicação realiza o cadastro dos pedidos de uma hamburgueria, utiliza Node e Express.</h2>
+<h2 align="center">Cadastro de pedidos de uma hamburgueria <br> <br> 
+  Node e Express</h2>
 
-<h2 align="center">Rotas</h2>
+<h2>Rotas</h2>
 <h4>POST /orders:</h4>A rota recebe informações sobre um pedido de um cliente em uma hamburgueria, essas informações são passadas dentro do corpo(body) da requisição, e 
 registrado o novo pedido dentro de um array no seguinte formato: <br>
 <br>
 { <br>id: "ac3ebf68-e0ad-4c1d-9822-ff1b849589a8", <br>order: "X- Salada, 2 batatas grandes, 1 coca-cola", <br>clientName: "José", <br>price: 44.50, <br>status: "
-Em preparação" <br>}. <br>
+Em preparação" <br>} <br>
 <br>
 O ID é gerado utilizando UUID V4 assim que o pedido é criado.
 
